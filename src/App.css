@@ -1,38 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
 .App {
-  text-align: center;
+  @apply bg-[url('./assets/bg4.jpeg')] lg:bg-[url('./assets/bg.jpeg')] w-screen h-screen bg-cover bg-no-repeat lg:bg-center w-screen h-screen relative
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.filtro {
+  @apply h-full w-full bg-pink-500/25 flex items-center
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.contenedor-prinicipal {
+  @apply container m-auto w-2/3 h-2/3  bg-blue-50/70 rounded-lg drop-shadow-lg hover:drop-shadow-xl backdrop-blur-sm border-solid border-2 border-zinc-200 flex justify-center items-center flex-col
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.foto-perfil {
+  @apply bg-[url('./assets/profile.JPG')] lg:w-36 lg:h-36 w-28 h-28 bg-center bg-cover rounded-full drop-shadow-lg hover:drop-shadow-xl mb-5
 }
 
-.App-link {
-  color: #61dafb;
+.nombre-perfil {
+  @apply font-bold font-Roboto-mono text-sm lg:text-lg 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contenedor-botones {
+  @apply w-3/5 flex flex-col lg:flex-row lg:justify-around
+}
+
+.btn-redes {
+  @apply bg-pink-300/90 flex justify-center items-center rounded-lg lg:w-36 lg:mb-0 lg:mt-0 hover:bg-pink-400/90  lg:py-0 drop-shadow-lg hover:drop-shadow-xl backdrop-blur
+}
+
+.descripcion {
+  @apply lg:mb-20 mb-16 mt-1 font-Roboto-mono text-xs lg:text-base italic
 }
