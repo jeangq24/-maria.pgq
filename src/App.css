@@ -32,5 +32,5 @@
 }
 
 .descripcion {
-  @apply lg:mb-20 mb-16 mt-1 font-Roboto-mono text-xs lg:text-base italic
+  @apply lg:mb-20 mb-16 mt-1 font-Roboto-mono text-xs lg:text-base italic font-bold
 }
