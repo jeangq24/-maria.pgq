@@ -28,7 +28,7 @@
 }
 
 .btn-redes {
-  @apply bg-pink-300/90 flex justify-center items-center rounded-lg lg:w-36 lg:mb-0 lg:mt-0 hover:bg-pink-400/90  lg:py-0 drop-shadow-lg hover:drop-shadow-xl backdrop-blur transition delay-75
+  @apply bg-pink-300/90 flex justify-center items-center rounded-lg lg:w-36 lg:mb-0 lg:mt-0 hover:bg-pink-400/90  lg:py-0 drop-shadow-lg hover:drop-shadow-xl backdrop-blur transition delay-75 border-double border-2 border-pink-400/75 hover:border-double border-2 hover:border-pink-500/80
 }
 
 .descripcion {
